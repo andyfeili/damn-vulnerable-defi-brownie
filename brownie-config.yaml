@@ -1,0 +1,15 @@
+dependencies:
+  - "OpenZeppelin/openzeppelin-contracts@3.0.0"
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+dotenv: .env
+wallets: 
+  deployer: ${PRIVATE_KEY_DEPLOYER}
+  attacker: ${PRIVATE_KEY_ATTACKER}
+  someUser: ${PRIVATE_KEY_SOMEUSER}
+networks:
+  default: development
+  rinkeby:
+    verify: False
